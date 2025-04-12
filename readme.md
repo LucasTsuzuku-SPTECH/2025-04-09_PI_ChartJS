@@ -34,14 +34,6 @@ Gráfico de Barras:
 | Maio      | 20                | 88            |
 | Junho     | 18                | 82            |
 
-Mês Temperatura Média Umidade Média
-Janeiro 22 90
-Fevereiro 24 89
-Março 27 93
-Abril 23 87
-Maio 20 88
-Junho 18 82
-
 Caso queira, pode adicionar CSS à página!
 
 Formato de entrega:

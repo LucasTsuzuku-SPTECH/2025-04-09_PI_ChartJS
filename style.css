@@ -1,0 +1,14 @@
+body {
+  background-color: #fefae0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  display: flex;
+}
+
+.grafico {
+  position: relative;
+  height: 60vh;
+  width: 60vw;
+}

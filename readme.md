@@ -53,6 +53,7 @@ Crie um repositório PÚBLICO para subir o código desenvolvido, e envie o ender
 - Criar style.css
 - Criar as divs com as tags canvas dentro
 - Criar os gráficos com chart.js
+- Criar tabela ao lado dos gráficos
 
 ## Resultados 🎁
 

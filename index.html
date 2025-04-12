@@ -8,15 +8,91 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
-    <h1>SPTECH - Gráficos para dashboards</h1>
+    <h1>SPTECH - GRÁFICOS PARA DASHBOARDS</h1>
     <h2>Lucas Hideaki Tsuzuku - 1CCOA</h2>
     <section>
       <div class="grafico" id="div_grafico1">
         <canvas id="can_grafico1"></canvas>
       </div>
+      <table>
+        <tr>
+          <th>Horário</th>
+          <th>Temperatura</th>
+          <th>Umidade</th>
+        </tr>
+        <tr class="tr_1">
+          <td>12:00</td>
+          <td>30</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>13:00</td>
+          <td>29</td>
+          <td>82</td>
+        </tr>
+        <tr class="tr_1">
+          <td>14:00</td>
+          <td>28</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>15:00</td>
+          <td>25</td>
+          <td>85</td>
+        </tr>
+        <tr class="tr_1">
+          <td>16:00</td>
+          <td>22</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>17:00</td>
+          <td>23</td>
+          <td>83</td>
+        </tr>
+      </table>
+    </section>
+    <section>
       <div class="grafico" id="div_grafico2">
-        <canvas id="can_grafico1"></canvas>
+        <canvas id="can_grafico2"></canvas>
       </div>
+      <table>
+        <tr>
+          <th>Mês</th>
+          <th>Temperatura Média</th>
+          <th>Umidade Média</th>
+        </tr>
+        <tr class="tr_1">
+          <td>Janeiro</td>
+          <td>22</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Fevereiro</td>
+          <td>24</td>
+          <td>89</td>
+        </tr>
+        <tr class="tr_1">
+          <td>Março</td>
+          <td>27</td>
+          <td>93</td>
+        </tr>
+        <tr>
+          <td>Abril</td>
+          <td>23</td>
+          <td>87</td>
+        </tr>
+        <tr class="tr_1">
+          <td>Maio</td>
+          <td>20</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>Junho</td>
+          <td>18</td>
+          <td>82</td>
+        </tr>
+      </table>
     </section>
   </body>
   <script>
@@ -36,6 +112,36 @@
           {
             label: "Umidade (%)",
             data: [80, 82, 80, 85, 80, 83],
+            borderWidth: 2,
+            backgroundColor: "#219ebc",
+            borderColor: "#023047",
+          },
+        ],
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    });
+    const grafico2 = document.getElementById("can_grafico2");
+    new Chart(grafico2, {
+      type: "bar",
+      data: {
+        labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho"],
+        datasets: [
+          {
+            label: "Temperatura (°C)",
+            data: [22, 24, 27, 23, 20, 18],
+            borderWidth: 2,
+            backgroundColor: "#606c38",
+            borderColor: "#283618",
+          },
+          {
+            label: "Umidade (%)",
+            data: [90, 89, 93, 87, 88, 82],
             borderWidth: 2,
             backgroundColor: "#219ebc",
             borderColor: "#023047",

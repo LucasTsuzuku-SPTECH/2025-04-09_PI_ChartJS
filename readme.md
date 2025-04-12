@@ -8,7 +8,7 @@ Crie uma página HTML e utilize a biblioteca "Chart.JS" como foi explicado, cria
 
 ![Alt text](/image.png)
 
-Figura 1: Gráfico do vídeo de chart.js da SPTECH
+<p align="center">Figura 1: Gráfico do vídeo de chart.js da SPTECH</p>
 
 Para facilitar, estes são os dados:
 
@@ -65,7 +65,8 @@ Crie um repositório PÚBLICO para subir o código desenvolvido, e envie o ender
 ## Resultados 🎁
 
 ![Alt text](results1.png)
-Figura 2: Resultado da atividade
+
+<p align="center">Figura 2: Resultado da atividade</p>
 
 ## Referências 📚
 
